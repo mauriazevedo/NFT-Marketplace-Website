@@ -1,0 +1,9 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: purple;
+    /*background: linear-gradient(336.61deg, #251928 16.25%, rgba(37, 25, 40, 0) 91.6%);*/
+}
