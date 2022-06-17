@@ -50,11 +50,10 @@ header a button{
 
 header a button:hover{
     color: #ffffff;
-    border: 1px solid #ffffff;
     background-color: #FFCE4E;
 }
 
-@media (max-width: 934px){
+@media (max-width: 949px){
     header{
         padding: 34px 16px;
         justify-content: left;
