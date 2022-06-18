@@ -225,7 +225,6 @@ body{
 }
 
 #second-container .carousel-container .nft-carousel-container{
-    
     flex-wrap: nowrap;
     display: inline-flex;
 }
@@ -388,5 +387,23 @@ body{
 
     #second-container .title-container h3{
         font-size: 2.5em;
+    }
+
+    #second-container .carousel-controller {
+        display: none;
+    }
+
+    #second-container .carousel-container .nft-carousel-container{
+        display: block;
+    }
+
+    #second-container .carousel-container .nft-carousel-container .nft-container{
+        padding: 30px 16px;
+        width: 90%;
+        margin: 30px 0;
+    }
+
+    #second-container .carousel-container .nft-carousel-container .nft-container:nth-child(1){
+        margin-top: 100px;
     }
 }
