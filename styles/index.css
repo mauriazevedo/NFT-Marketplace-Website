@@ -327,9 +327,151 @@ body{
     background-color: rgba(0, 0, 0, 0);
 }
 
-#second-container .button-container button:hover{
+#third-container .button-container button:hover{
     background-color: #FFCE4E;
 }
+
+#third-container .title-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#third-container .title-container div{
+    position: absolute;
+    z-index: 1;
+    margin-right: 290px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #E03054;
+}
+
+#third-container .title-container h3{
+    z-index: 2;
+    margin: 60px 0;
+    font-weight: 800;
+    font-size: 3em;
+    font-family: 'Oxanium';
+}
+
+#third-container .timeline-container .timeline{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#third-container .timeline-container .timeline .timeline-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#third-container .timeline-container .timeline .timeline-item .icon-container{
+    background-color: #372839;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#third-container .timeline-container .timeline .timeline-item .icon-container img{
+    width: 50%;
+}
+
+#third-container .timeline-container .timeline .timeline-item .icon-text{
+    text-align: center;
+    color:#FFCE4E;
+    font-weight: 800;
+}
+
+#third-container .timeline-container .timeline .timeline-line{
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    margin-bottom: 51px;
+}
+
+#third-container .timeline-container .timeline .timeline-line img{
+    width: 100%;
+}
+
+#third-container .nft-carousel-container .nft-container{
+    display: inline-flex;
+    width: 100%;
+}
+
+#third-container .carousel-container{
+    overflow-x: auto;
+    position: relative;
+}
+
+#third-container .carousel-container .carousel-controller{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 186.76px;
+    left: 0;
+}
+
+#third-container .carousel-container .carousel-controller p{
+    color:#16091B;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    font-size: 2em;
+    border-radius: 50%;
+    background-color: #F5FBF2;
+}
+
+#third-container .carousel-controller p:hover{
+    background-color: #594D5E;
+}
+
+#third-container .carousel-container .nft-carousel-container{
+    flex-wrap: nowrap;
+    display: inline-flex;
+}
+
+#third-container .carousel-container .nft-carousel-container .nft-container{
+    padding: 30px;
+    width: 350px;
+    margin-left: 30px;
+    background-color: #3D2942;
+    flex-direction: column;
+}
+
+#third-container .carousel-container .nft-carousel-container .nft-container .img-container img{
+    width: 100%;
+}
+
+#third-container .carousel-container .nft-carousel-container .nft-container .nft-info-container{
+    margin-top: 20px;
+    display: flex;
+}
+
+#third-container .carousel-container .nft-carousel-container .nft-container .nft-info-container .author{
+    margin-left: 10px;
+    font-weight: 800;
+}
+
+#third-container .carousel-container .nft-carousel-container .nft-container .nft-info-container .nft-code{
+    margin-left: auto;
+    color: #C2B5C6;
+}
+
+#third-container .carousel-container .nft-carousel-container .nft-container .nft-info-container .img-container img{
+    width: 54px;
+}
+
 
 @media (max-width: 949px){
     main{
@@ -379,6 +521,12 @@ body{
         width: 30%;
     }
 
+    #second-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
     #second-container .title-container div{
         margin-right: 220px;
         width: 80px;
@@ -398,12 +546,39 @@ body{
     }
 
     #second-container .carousel-container .nft-carousel-container .nft-container{
-        padding: 30px 16px;
+        padding: 30px 30px;
         width: 90%;
-        margin: 30px 0;
+        margin: 30px auto;
     }
 
     #second-container .carousel-container .nft-carousel-container .nft-container:nth-child(1){
         margin-top: 100px;
     }
+
+    #third-container .timeline-container .timeline{
+        display: block;
+    }
+
+    #third-container .timeline-container .timeline .timeline-line{
+        width: 30%;
+        margin: 20% auto;
+        box-sizing: content-box;
+        transform: rotate(90deg);
+    }
+
+    #third-container .carousel-container .carousel-controller{
+        display: none;
+    }
+
+    #third-container .carousel-container .nft-carousel-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #third-container .carousel-container .nft-carousel-container .nft-container{
+        width: 90%;
+        margin: 30px auto;
+    }
+
+   
 }
