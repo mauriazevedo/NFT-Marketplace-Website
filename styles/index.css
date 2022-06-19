@@ -540,13 +540,16 @@ body{
     #second-container .carousel-controller {
         display: none;
     }
+    #second-container .carousel-container{
+        overflow-x: hidden;
+    }
 
     #second-container .carousel-container .nft-carousel-container{
         display: block;
     }
 
     #second-container .carousel-container .nft-carousel-container .nft-container{
-        padding: 30px 30px;
+        padding: 30px 16px;
         width: 90%;
         margin: 30px auto;
     }
@@ -566,6 +569,12 @@ body{
         transform: rotate(90deg);
     }
 
+    #third-container .title-container div{
+        margin-right: 250px;
+        width: 80px;
+        height: 80px;
+    }
+
     #third-container .carousel-container .carousel-controller{
         display: none;
     }
@@ -577,6 +586,7 @@ body{
 
     #third-container .carousel-container .nft-carousel-container .nft-container{
         width: 90%;
+        padding: 30px 16px;
         margin: 30px auto;
     }
 
